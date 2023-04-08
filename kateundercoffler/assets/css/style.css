@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /**
- * @author: Prénoms Noms OU githubUSERNAME
+ * @author: kateundercoffler
  */
 
-/* IMPORTER D'ABORD LES POLICES DE CARACTÈRES */
+ /* POLICES DE CARACTÈRES */
+ @import url("https://use.typekit.net/kcw4vzt.css");
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* IMPORTER LES FICHIERS CSS */
 @import url(normalize.css);
