@@ -37,7 +37,11 @@
     </header>
     <main class="main">
         <div class="main-section">
-            <img src="placeholder.png" alt="Chat noir en train de manger qui regarde à la caméra">
+            <picture class="main-section_picture">
+                <source srcset="./images/timQuiz-introduction_642.jpg" media="(max-width:600px)">
+                <source srcset="./images/timQuiz-introduction_1060.jpg" media="(max-width:1060px)">
+                <img class="main-section_imag " src="./images/timQuiz-introduction_1284.jpg" alt="Chat noir en train de manger qui regarde à la photo appareil">
+            </picture>
             <!-- <svg>
                     image du élément graphique ici
             </svg> -->
@@ -57,8 +61,11 @@
             <ul class="choixReponses">
                 <li>
                     <input type="radio" name="Q1" id="Q1A" value="A" required class="visuallyhidden">
-                    <label for="Q1A"><img src="placeholder.png" alt=""> Le CSR n'offre aucun avantage pour les chats
-                        errants</label>
+                    <label for="Q1A"><picture class="choixReponse_imageQ1">
+                        <source srcset="./images/question03-reponseA_530.jpg" media="(max-width:530px)">
+                        <source srcset="./images/question01-reponseA_1060.jpg" media="(max-width:1060px)">
+                        <img class="main-section_imag " src="./images/question01-reponseA_1284.jpg" alt="Chat noir en train de manger qui regarde à la photo appareil">
+                    </picture></label>
                 </li>
                 <li>
                     <input type="radio" name="Q1" id="Q1B" value="B" required class="visuallyhidden">
