@@ -3,9 +3,9 @@
 
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
-    --couleur-bandeau-superieur: #575757;
-    --couleur-svg-bandeau-superieur: #E7E7E7;
-    --couleur-svg-bandeau-superieur-hover: #fff;
+    --couleur-bandeau-superieur: #F6C67E;
+    --couleur-svg-bandeau-superieur: #2f2f2f;
+    --couleur-svg-bandeau-superieur-hover: #2f2f2f;
 }
 
 /*** Clearfix ***/
