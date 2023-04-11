@@ -3,9 +3,9 @@
  * @author: kateundercoffler
  */
 
- /* POLICES DE CARACTÈRES */
- @import url("https://use.typekit.net/kcw4vzt.css");
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* POLICES DE CARACTÈRES */
+@import url("https://use.typekit.net/kcw4vzt.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* IMPORTER LES FICHIERS CSS */
 @import url(normalize.css);
@@ -18,12 +18,72 @@
 header {
     display: flex;
     flex-direction: column-reverse;
+
 }
-.header-banner {    
+
+.header-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: #F9B093;
     padding: 2rem;
     font-family: 'Poppins';
     font-size: 1.5rem;
-    
-
+    width: 1000px;
 }
+
+/* @media only screen and (min-width: 500px) {
+    .header-banner {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas:
+        "header1"
+        "header2"
+    }
+}
+@media (min-width: 500px) {
+    .header1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+} */
+.header-banner_logo {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 425px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.choixReponses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 425px) {
+    .choixReponses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
