@@ -16,5 +16,14 @@
 
 /* ENTÊTE  */
 header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.header-banner {    
+    background-color: #F9B093;
+    padding: 2rem;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
     
+
 }
