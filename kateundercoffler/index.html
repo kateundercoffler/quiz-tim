@@ -11,7 +11,7 @@
 
 <body>
     <header role="banner"> <!-- Validator a donné l'avertissement header role banner n'est pas nécessaire -->
-        <a href="../index.html">
+        <a href="../index.html"> <!-- contenu class lienrapide screen-reader-only focusable -->
             <svg xmlns="http://www.w3.org/2000/svg" class="logoQuizTIM" viewBox="0 0 174.55 28.58"
                 aria-labelledby="libelleQuizTIM">
                 <title id="libelleQuizTIM">retour au Portail Quiz TIM</title>
@@ -52,96 +52,103 @@
         </div>
         <!-- Début de la question 1 -->
         <h2 class="section-quiz_status">Q1 de 3</h2>
-        <form action="" method="post"></form>
-        <fieldset id="Q1" class="section-quiz">
-            <img src="./images/question01_642.jpg" alt="">
-            <legend>
-                <h3>Quels avantages le CSR apporte-t-il aux chats errants ?</h3>
-            </legend>
+        <form action="" method="post">
+            <fieldset id="Q1" class="section-quiz">
+                <img src="./images/question01_642.jpg" alt="">
+                <legend>
+                    <h3>Quels avantages le CSR apporte-t-il aux chats errants ?</h3>
+                </legend>
 
 
-            <ul class="choixReponses">
-                <li>
-                    <input type="radio" name="Q1" id="Q1A" value="A" required class="visuallyhidden">
-                    <label for="Q1A"><img src="./images/question01-reponseA_642.jpg"
-                            alt="Chat roux et chat tabby qui touchent leurs nez">Le CSR n'offre aucun avantage pour les
-                        chats
-                        errants</label>
-                </li>
-                <li>
-                    <input type="radio" name="Q1" id="Q1B" value="B" required class="visuallyhidden">
-                    <label for="Q1B"><img src="./images/question01-reponseB_642.jpg"
-                            alt="Homme en train de nourrir une groupe de chats errants">Le CSR peut contrôler la
-                        surpopulation de chats
-                        et diminuer
-                        les chats qui sont euthanasiés</label>
-                </li>
-                <li>
-                    <input type="radio" name="Q1" id="Q1C" value="C" required class="visuallyhidden">
-                    <label for="Q1C"><img src="./images/question01-reponseC_642.jpg"
-                            alt="Chat tabby s'assis sur un mur en ciment en regardant à la photo appareil">Le CSR permet
-                        la ville de ramasser tous les
-                        chats, les
-                        stériliser et les laisser aux eux-mêmes.</label>
-                </li>
-            </ul>
-            <p class="erreur"></p>
-        </fieldset>
+                <ul class="choixReponses">
+                    <li>
+                        <input type="radio" name="Q1" id="Q1A" value="A" required class="visuallyhidden">
+                        <label for="Q1A"><img src="./images/question01-reponseA_642.jpg"
+                                alt="Chat roux et chat tabby qui touchent leurs nez">Le CSR n'offre aucun avantage pour
+                            les
+                            chats
+                            errants</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Q1" id="Q1B" value="B" required class="visuallyhidden">
+                        <label for="Q1B"><img src="./images/question01-reponseB_642.jpg"
+                                alt="Homme en train de nourrir une groupe de chats errants">Le CSR peut contrôler la
+                            surpopulation de chats
+                            et diminuer
+                            les chats qui sont euthanasiés</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Q1" id="Q1C" value="C" required class="visuallyhidden">
+                        <label for="Q1C"><img src="./images/question01-reponseC_642.jpg"
+                                alt="Chat tabby s'assis sur un mur en ciment en regardant à la photo appareil">Le CSR
+                            permet
+                            la ville de ramasser tous les
+                            chats, les
+                            stériliser et les laisser aux eux-mêmes.</label>
+                    </li>
+                </ul>
+                <p class="erreur"></p>
+            </fieldset>
 
-        <!-- Début de la question 2 -->
-        <h2 class="section-quiz_status">Q2 de 3</h2>
-        <fieldset id="Q2" class="section-quiz_Q2">
-            <img src="./images/question02_642.jpg" alt="">
-            <legend>
-                <h3>Si un chat errant a l'oreille gauche coupée, ça veut dire quoi ?</h3>
-            </legend>
-            <ul class="choixReponses">
-                <li>
-                    <input type="radio" name="Q2" id="Q2A" value="A" required class="visuallyhidden">
-                    <label for="Q2A"><img src="./images/question02-reponseA_642.jpg" alt="">Que le chat a été
-                        blessé</label>
-                </li>
-                <li>
-                    <input type="radio" name="Q2" id="Q2B" value="B" required class="visuallyhidden">
-                    <label for="Q2B"><img src="./images/question02-reponseB_642.jpg" alt="">Que c'est une race
-                        spécifique du chat</label>
-                </li>
-                <li>
-                    <input type="radio" name="Q2" id="Q2C" value="C" required class="visuallyhidden">
-                    <label for="Q2C"><img src="./images/question02-reponseC_642.jpg" alt="">C'est le signe universel que
-                        le chat a été déjà
-                        stérilisé</label>
-                </li>
-            </ul>
-            <p class="erreur"></p>
-        </fieldset>
+            <!-- Début de la question 2 -->
+            <h2 class="section-quiz_status">Q2 de 3</h2>
+            <fieldset id="Q2" class="section-quiz_Q2">
+                <img src="./images/question02_642.jpg" alt="">
+                <legend>
+                    <h3>Si un chat errant a l'oreille gauche coupée, ça veut dire quoi ?</h3>
+                </legend>
+                <ul class="choixReponses">
+                    <li>
+                        <input type="radio" name="Q2" id="Q2A" value="A" required class="visuallyhidden">
+                        <label for="Q2A"><img src="./images/question02-reponseA_642.jpg" alt="">Que le chat a été
+                            blessé</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Q2" id="Q2B" value="B" required class="visuallyhidden">
+                        <label for="Q2B"><img src="./images/question02-reponseB_642.jpg" alt="">Que c'est une race
+                            spécifique du chat</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Q2" id="Q2C" value="C" required class="visuallyhidden">
+                        <label for="Q2C"><img src="./images/question02-reponseC_642.jpg" alt="">C'est le signe universel
+                            que
+                            le chat a été déjà
+                            stérilisé</label>
+                    </li>
+                </ul>
+                <p class="erreur"></p>
+            </fieldset>
 
-        <!-- Début de la question 3 -->
-        <h2 class="section-quiz_status">Q3 de 3</h2>
-        <fieldset id="Q3" class="section-quiz_Q3">
-            <img src="./images/question03_642.jpg" alt="">
-            <legend>
-                <h3>Pourquoi est-ce nécessaire de retourner le chat dans un lieu qui lui est familier ?</h3>
-            </legend>
-            <ul class="choixReponses">
-                <li>
-                    <input type="radio" name="Q3" id="Q3A" value="A" required class="visuallyhidden">
-                    <label for="Q3A"><img src="./images/question03-reponseA_642.jpg" alt="">Parce qu'il a des amis qui lui manquent</label>
-                </li>
-                <li>
-                    <input type="radio" name="Q3" id="Q3B" value="B" required class="visuallyhidden">
-                    <label for="Q3B"><img src="./images/question03-reponseB_642.jpg" alt="">Parce que le chat connaît son environnement et sa
-                        communauté</label>
-                </li>
-                <li>
-                    <input type="radio" name="Q3" id="Q3C" value="C" required class="visuallyhidden">
-                    <label for="Q3C"><img src="./images/question03-reponseC_642.jpg" alt="">Parce qu'il y a une personne qui donne des
-                        soins</label>
-                </li>
-            </ul>
-            <p class="erreur"></p>
-        </fieldset>
-        <button>Valider mes réponses</button>
+            <!-- Début de la question 3 -->
+            <h2 class="section-quiz_status">Q3 de 3</h2>
+            <fieldset id="Q3" class="section-quiz_Q3">
+                <img src="./images/question03_642.jpg" alt="">
+                <legend>
+                    <h3>Pourquoi est-ce nécessaire de retourner le chat dans un lieu qui lui est familier ?</h3>
+                </legend>
+                <ul class="choixReponses">
+                    <li>
+                        <input type="radio" name="Q3" id="Q3A" value="A" required class="visuallyhidden">
+                        <label for="Q3A"><img src="./images/question03-reponseA_642.jpg" alt="">Parce qu'il a des amis
+                            qui lui manquent</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Q3" id="Q3B" value="B" required class="visuallyhidden">
+                        <label for="Q3B"><img src="./images/question03-reponseB_642.jpg" alt="">Parce que le chat
+                            connaît son environnement et sa
+                            communauté</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Q3" id="Q3C" value="C" required class="visuallyhidden">
+                        <label for="Q3C"><img src="./images/question03-reponseC_642.jpg" alt="">Parce qu'il y a une
+                            personne qui donne des
+                            soins</label>
+                    </li>
+                </ul>
+                <p class="erreur"></p>
+            </fieldset>
+            <button>Valider mes réponses</button>
+        </form>
     </main>
 
 </body>
