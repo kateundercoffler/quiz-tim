@@ -14,6 +14,7 @@
 2. Faire des ajustements aux médias
 3. Débug
 4. Valider mon html
+5. Ajout de pied page dans le HTML et faire le CSS(pied de page)
 
 :notebook: Conlusion :
 :cry: :pray: :sleeping: :clap: :sob: :skull: :cyclone: :trophy:
