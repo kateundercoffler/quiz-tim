@@ -18,4 +18,4 @@
 
 :notebook: Conlusion :
 :cry: :pray: :sleeping: :clap: :sob: :skull: :cyclone: :trophy:
-Cela est une vraie conclusion de mes emotions pendant mon travail sur l'intégration du quiz. J'avais appris beaucoup mais je suis fatiguée et débordée.
+Cela est une vraie conclusion de mes emotions pendant mon travail sur l'intégration du quiz. J'ai appris beaucoup mais je suis fatiguée et débordée avec tout ce qu'on a besoin de faire dans tous les cours.
