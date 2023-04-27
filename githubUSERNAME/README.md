@@ -1,2 +1,0 @@
-# Titre du Quiz-TIM
-
