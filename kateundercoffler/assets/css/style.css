@@ -299,6 +299,13 @@ form {
 .main-section_paragraphes {
     padding: 15px;
 }
+/* @media (min-width: 1000px) {
+    .main-section_paragraphes {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+} */
 
 .choixReponses {
     display: flex;

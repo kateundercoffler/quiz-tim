@@ -30,6 +30,14 @@ const objJSON = {
     }
 };
 
+/* Écouteurs d'événements */
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('body').classList.add('js');
+    /* initier le quiz */
+    quiz.debuterQuiz();
+});
+
+
 /* Objet Quiz */
 const quiz = {
     debuterQuiz: function () { },
