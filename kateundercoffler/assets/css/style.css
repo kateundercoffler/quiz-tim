@@ -54,6 +54,7 @@ body {
     }
 }
 
+
 .header-banner_logo {
     max-width: 171px;
     padding-top: 24px;
@@ -124,7 +125,7 @@ body {
 
 @media (min-width: 1000px) {
     .main-section_graphique {
-        right: -136px;
+        right: -41px;
         top: 558px;
     }
 }
@@ -172,6 +173,18 @@ body {
     background-color: #F6C67E;
     border-radius: 40px;
     width: 25%;
+    height: 100%;
+}
+.barre-progres_barre2 {
+    background-color: #F6C67E;
+    border-radius: 40px;
+    width: 50%;
+    height: 100%;
+}
+.barre-progres_barre3 {
+    background-color: #F6C67E;
+    border-radius: 40px;
+    width: 100%;
     height: 100%;
 }
 
@@ -327,9 +340,10 @@ ul {
 
 @media (min-width: 1000px) {
     .section-quiz_status {
-        margin-right: 954px;
+        margin-right: 879px;
         /* faut changer tantôt */
         font-size: 1.25rem;
+        
 
     }
 }
@@ -339,6 +353,7 @@ ul {
         display: flex;
         justify-content: left;
         align-items: left;
+        padding-bottom: 82px;
     }
 }
 
@@ -356,6 +371,7 @@ li {
 
 button {
     margin-left: auto;
+    margin-bottom: 30px;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 2px 8px 8px -4px #414440;
