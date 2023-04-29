@@ -31,16 +31,42 @@ const objJSON = {
 };
 
 /* Écouteurs d'événements */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('load', function () {
     document.querySelector('body').classList.add('js');
     /* initier le quiz */
     quiz.debuterQuiz();
+
 });
+document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
+    btnRadio.addEventListener('click', function (e) {
+        e.target.closest('.section-quiz').querySelector('.divBouton_bouton').disabled = false;
+    })
+});
+
+console.log(document.querySelectorAll('input'))
+console.log("salut");
+
+
 
 
 /* Objet Quiz */
 const quiz = {
-    debuterQuiz: function () { },
-    validerReponse: function (idReponse) { },
-    afficherResultats: function () { }
+    intNoQuestion: 0,
+    intNbQuestions: 3,
+    intBonnesReponses: 0,
+
+    refIntro: document.querySelector('.main-section'),
+    refArrQuestions: document.querySelectorAll('.section-quiz'),
+    refBoutonSubmit: document.querySelector('.boutonValider'),
+
+    debuterQuiz: function () {
+        
+
+    },
+    validerReponse: function (idReponse) {
+
+    },
+    afficherResultats: function () {
+
+    }
 }
