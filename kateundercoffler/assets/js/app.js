@@ -44,11 +44,17 @@ const quiz = {
         console.log(this.refIntro);
         const refIntro = document.getElementById('ctnMain')
         refIntro.classList.add('cacher');
-        console.log(this.refArrQuestions);
+        console.log(this.refArrQuestions[0]);
 
+        this.refArrQuestions[0].classList.remove('cacher');
 
     },
+
     validerReponse: function (idReponse) {
+        console.log("hello encore", idReponse);
+
+        
+
 
     },
     afficherResultats: function () {
@@ -61,11 +67,15 @@ document.getElementById('demarrerQuiz')
 .addEventListener('click', function () {
     quiz.debuterQuiz()
 });
+document.getElementById('validerReponse1')
+.addEventListener('click', function (e) {
+    quiz.validerReponse(e.target.closest('.ctnQuestion').querySelector('input[type=radio]:checked').id)
+});
 
 
 document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
     btnRadio.addEventListener('click', function (e) {
-        e.target.closest('.ctnQuestion').querySelector('.divBouton_bouton').disabled = false;
+        e.target.closest('.ctnQuestion').querySelector('.bouton').disabled = false;
     })
 });
 
