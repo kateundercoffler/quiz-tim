@@ -39,7 +39,7 @@
         </span>
     </div>
     <main class="main">
-        <div class="main-section">
+        <div class="main-section" id="ctnMain">
             <!-- Élément graphique ici -->
             <!-- <img class="main-section_graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg"> -->
 
@@ -73,163 +73,169 @@
                     <p class="main-section_introduction">Faites le quiz pour le savoir ! </p>
                 </div>
             </div>
+            <div class="mainBouton">
+                <button class="bouton" type="button" id="demarrerQuiz" name="demarrerQuiz">Démarrer le quiz !</button>
+
+            </div>
         </div>
+
         <!-- Début de la question 1 -->
 
         <form action="#" method="post">
-            <h2 class="section-quiz_status">Q1 de 3</h2>
-            <div class="barre-progres_container">
-                <div class="barre-progres_barre"></div>
-            </div>
-            <fieldset id="Q1" class="section-quiz">
-                <div class="quiz-picture-boite">
-                    <div class="quiz-picture-boite_symbols">
-                        <div class="quiz-picture-boite_symbol">╳</div>
-                        <div class="quiz-picture-boite_symbol">▢</div>
-                        <div class="quiz-picture-boite_symbol">─</div>
-                    </div>
-                    <img class="quiz-picture-boite_img" src="./images/question01_642.jpg"
-                        alt="Chat gris et blanc sur un trottoir">
-                    <div class="quiz-picture-boite_bar">
-                        <div class="quiz-picture-boite_bar-start">&lt;</div>
-                        <div class="quiz-picture-boite_bar-line"></div>
-                        <div class="quiz-picture-boite_bar-end">&gt;</div>
-                    </div>
+            <div class="ctnQuestion cacher">
+                <h2 class="section-quiz_status">Q1 de 3</h2>
+                <div class="barre-progres_container">
+                    <div class="barre-progres_barre"></div>
                 </div>
-
-                <img class="q-graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg">
-
-                <legend>
-                    <h3>Quels avantages le CSR apporte-t-il aux chats errants ?</h3>
-                </legend>
-                <p class="question__retroaction"></p>
-                <p class="question__explication"></p>
-                <ul class="choixReponses">
-                    <li>
-                        <input type="radio" name="Q1" id="Q1A" value="A" required class="visuallyhidden">
-                        <label for="Q1A">Le CSR n'offre aucun avantage pour
-                            les
-                            chats
-                            errants</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="Q1" id="Q1B" value="B" required class="visuallyhidden">
-                        <label for="Q1B">Le CSR peut contrôler la
-                            surpopulation de chats
-                            et diminuer
-                            les chats qui sont euthanasiés</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="Q1" id="Q1C" value="C" required class="visuallyhidden">
-                        <label for="Q1C">Le CSR
-                            permet
-                            la ville de ramasser tous les
-                            chats, les
-                            stériliser et les laisser aux eux-mêmes.</label>
-                    </li>
-                </ul>
-                <p class="erreur"></p>
-            </fieldset>
+                <fieldset id="Q1" class="section-quiz">
+                    <div class="quiz-picture-boite">
+                        <div class="quiz-picture-boite_symbols">
+                            <div class="quiz-picture-boite_symbol">╳</div>
+                            <div class="quiz-picture-boite_symbol">▢</div>
+                            <div class="quiz-picture-boite_symbol">─</div>
+                        </div>
+                        <img class="quiz-picture-boite_img" src="./images/question01_642.jpg"
+                            alt="Chat gris et blanc sur un trottoir">
+                        <div class="quiz-picture-boite_bar">
+                            <div class="quiz-picture-boite_bar-start">&lt;</div>
+                            <div class="quiz-picture-boite_bar-line"></div>
+                            <div class="quiz-picture-boite_bar-end">&gt;</div>
+                        </div>
+                    </div>
+                    <img class="q-graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg">
+                    <legend>
+                        <h3>Quels avantages le CSR apporte-t-il aux chats errants ?</h3>
+                    </legend>
+                    <p class="question__retroaction"></p>
+                    <p class="question__explication"></p>
+                    <ul class="choixReponses">
+                        <li>
+                            <input type="radio" name="Q1" id="Q1A" value="A" required class="visuallyhidden">
+                            <label for="Q1A">Le CSR n'offre aucun avantage pour
+                                les
+                                chats
+                                errants</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Q1" id="Q1B" value="B" required class="visuallyhidden">
+                            <label for="Q1B">Le CSR peut contrôler la
+                                surpopulation de chats
+                                et diminuer
+                                les chats qui sont euthanasiés</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Q1" id="Q1C" value="C" required class="visuallyhidden">
+                            <label for="Q1C">Le CSR
+                                permet
+                                la ville de ramasser tous les
+                                chats, les
+                                stériliser et les laisser aux eux-mêmes.</label>
+                        </li>
+                    </ul>
+                    <p class="erreur"></p>
+                </fieldset>
+            </div>
             <!-- Début de la question 2 -->
-            <h2 class="section-quiz_status">Q2 de 3</h2>
-            <div class="barre-progres_container">
-                <div class="barre-progres_barre2"></div>
-            </div>
-            <fieldset id="Q2" class="section-quiz">
-                <div class="quiz-picture-boite">
-                    <div class="quiz-picture-boite_symbols">
-                        <div class="quiz-picture-boite_symbol">╳</div>
-                        <div class="quiz-picture-boite_symbol">▢</div>
-                        <div class="quiz-picture-boite_symbol">─</div>
-                    </div>
-                    <img class="quiz-picture-boite_img" src="./images/question02_642.jpg"
-                        alt="Un chat roux et gris s'assoient devant un arbe">
-                    <div class="quiz-picture-boite_bar">
-                        <div class="quiz-picture-boite_bar-start">&lt;</div>
-                        <div class="quiz-picture-boite_bar-line"></div>
-                        <div class="quiz-picture-boite_bar-end">&gt;</div>
-                    </div>
+            <div class="ctnQuestion cacher">
+                <h2 class="section-quiz_status">Q2 de 3</h2>
+                <div class="barre-progres_container">
+                    <div class="barre-progres_barre2"></div>
                 </div>
-
-                <!-- Élément graphique ici -->
-                <img class="q-graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg">
-                <legend>
-                    <h3>Si un chat errant a l'oreille gauche coupée, ça veut dire quoi ?</h3>
-                </legend>
-                <p class="question__retroaction"></p>
-                <p class="question__explication"></p>
-                <ul class="choixReponses">
-                    <li>
-                        <input type="radio" name="Q2" id="Q2A" value="A" required class="visuallyhidden">
-                        <label for="Q2A">Que le chat a été
-                            blessé</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="Q2" id="Q2B" value="B" required class="visuallyhidden">
-                        <label for="Q2B">Que c'est une race
-                            spécifique du chat</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="Q2" id="Q2C" value="C" required class="visuallyhidden">
-                        <label for="Q2C">C'est le signe universel
-                            que
-                            le chat a été déjà
-                            stérilisé</label>
-                    </li>
-                </ul>
-                <p class="erreur"></p>
-            </fieldset>
+                <fieldset id="Q2" class="section-quiz">
+                    <div class="quiz-picture-boite">
+                        <div class="quiz-picture-boite_symbols">
+                            <div class="quiz-picture-boite_symbol">╳</div>
+                            <div class="quiz-picture-boite_symbol">▢</div>
+                            <div class="quiz-picture-boite_symbol">─</div>
+                        </div>
+                        <img class="quiz-picture-boite_img" src="./images/question02_642.jpg"
+                            alt="Un chat roux et gris s'assoient devant un arbe">
+                        <div class="quiz-picture-boite_bar">
+                            <div class="quiz-picture-boite_bar-start">&lt;</div>
+                            <div class="quiz-picture-boite_bar-line"></div>
+                            <div class="quiz-picture-boite_bar-end">&gt;</div>
+                        </div>
+                    </div>
+                    <!-- Élément graphique ici -->
+                    <img class="q-graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg">
+                    <legend>
+                        <h3>Si un chat errant a l'oreille gauche coupée, ça veut dire quoi ?</h3>
+                    </legend>
+                    <p class="question__retroaction"></p>
+                    <p class="question__explication"></p>
+                    <ul class="choixReponses">
+                        <li>
+                            <input type="radio" name="Q2" id="Q2A" value="A" required class="visuallyhidden">
+                            <label for="Q2A">Que le chat a été
+                                blessé</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Q2" id="Q2B" value="B" required class="visuallyhidden">
+                            <label for="Q2B">Que c'est une race
+                                spécifique du chat</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Q2" id="Q2C" value="C" required class="visuallyhidden">
+                            <label for="Q2C">C'est le signe universel
+                                que
+                                le chat a été déjà
+                                stérilisé</label>
+                        </li>
+                    </ul>
+                    <p class="erreur"></p>
+                </fieldset>
+            </div>
             <!-- Début de la question 3 -->
-            <h2 class="section-quiz_status">Q3 de 3</h2>
-            <div class="barre-progres_container">
-                <div class="barre-progres_barre3"></div>
-            </div>
-            <fieldset id="Q3" class="section-quiz">
-                <div class="quiz-picture-boite">
-                    <div class="quiz-picture-boite_symbols">
-                        <div class="quiz-picture-boite_symbol">╳</div>
-                        <div class="quiz-picture-boite_symbol">▢</div>
-                        <div class="quiz-picture-boite_symbol">─</div>
-                    </div>
-                    <img class="quiz-picture-boite_img" src="./images/question03_642.jpg"
-                        alt="Chat roux se couche devant un immeuble">
-                    <div class="quiz-picture-boite_bar">
-                        <div class="quiz-picture-boite_bar-start">&lt;</div>
-                        <div class="quiz-picture-boite_bar-line"></div>
-                        <div class="quiz-picture-boite_bar-end">&gt;</div>
-                    </div>
+            <div class="ctnQuestion cacher">
+                <h2 class="section-quiz_status">Q3 de 3</h2>
+                <div class="barre-progres_container">
+                    <div class="barre-progres_barre3"></div>
                 </div>
-
-                <!-- Élément graphique ici -->
-                <img class="q-graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg">
-                <legend>
-                    <h3>Pourquoi est-ce nécessaire de retourner le chat dans un lieu qui lui est familier ?</h3>
-                </legend>
-                <p class="question__retroaction"></p>
-                <p class="question__explication"></p>
-                <ul class="choixReponses">
-                    <li>
-                        <input type="radio" name="Q3" id="Q3A" value="A" required class="visuallyhidden">
-                        <label for="Q3A">Parce qu'il a des amis
-                            qui lui manquent</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="Q3" id="Q3B" value="B" required class="visuallyhidden">
-                        <label for="Q3B">Parce que le chat
-                            connaît son environnement et sa
-                            communauté</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="Q3" id="Q3C" value="C" required class="visuallyhidden">
-                        <label for="Q3C">Parce qu'il y a une
-                            personne qui donne des
-                            soins</label>
-                    </li>
-                </ul>
-
-                <p class="erreur"></p>
-            </fieldset>
-            <div class="boutonValider">
+                <fieldset id="Q3" class="section-quiz">
+                    <div class="quiz-picture-boite">
+                        <div class="quiz-picture-boite_symbols">
+                            <div class="quiz-picture-boite_symbol">╳</div>
+                            <div class="quiz-picture-boite_symbol">▢</div>
+                            <div class="quiz-picture-boite_symbol">─</div>
+                        </div>
+                        <img class="quiz-picture-boite_img" src="./images/question03_642.jpg"
+                            alt="Chat roux se couche devant un immeuble">
+                        <div class="quiz-picture-boite_bar">
+                            <div class="quiz-picture-boite_bar-start">&lt;</div>
+                            <div class="quiz-picture-boite_bar-line"></div>
+                            <div class="quiz-picture-boite_bar-end">&gt;</div>
+                        </div>
+                    </div>
+                    <!-- Élément graphique ici -->
+                    <img class="q-graphique" src="./images/decoration_graphique.svg" alt="décoration graphique.svg">
+                    <legend>
+                        <h3>Pourquoi est-ce nécessaire de retourner le chat dans un lieu qui lui est familier ?</h3>
+                    </legend>
+                    <p class="question__retroaction"></p>
+                    <p class="question__explication"></p>
+                    <ul class="choixReponses">
+                        <li>
+                            <input type="radio" name="Q3" id="Q3A" value="A" required class="visuallyhidden">
+                            <label for="Q3A">Parce qu'il a des amis
+                                qui lui manquent</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Q3" id="Q3B" value="B" required class="visuallyhidden">
+                            <label for="Q3B">Parce que le chat
+                                connaît son environnement et sa
+                                communauté</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Q3" id="Q3C" value="C" required class="visuallyhidden">
+                            <label for="Q3C">Parce qu'il y a une
+                                personne qui donne des
+                                soins</label>
+                        </li>
+                    </ul>
+                    <p class="erreur"></p>
+                </fieldset>
+            </div>
+            <div class="boutonValider cacher">
                 <button class="bouton" type="submit" id="validerQuiz" name="validerQuiz" value="true">Valider mes réponses</button>
             </div>
         </form>
