@@ -36,27 +36,53 @@ const quiz = {
     intNbQuestions: 3,
     intBonnesReponses: 0,
 
-    refArrQuestions: document.querySelectorAll('.ctnQuestion'),
-    refBoutonSubmit: document.querySelector('.boutonValider'),
+    refArrQuestions: document.querySelectorAll('.ctnQuestion'), // Chercher tous les éléments qui ont la classe .ctnQuestion
+    refBoutonSubmit: document.querySelector('.boutonValider'), //Chercher le bouton pour faire la validation des réponses
 
     debuterQuiz: function () {
         console.log("hello world");
         console.log(this.refIntro);
-        const refIntro = document.getElementById('ctnMain')
-        refIntro.classList.add('cacher');
+        const refIntro = document.getElementById('ctnMain') //Variable qui sont les éléments ctnMain
+        refIntro.classList.add('cacher'); // Ajouter la classe 'cacher' pour cacher tous les questions
         console.log(this.refArrQuestions[0]);
 
-        this.refArrQuestions[0].classList.remove('cacher');
+        this.refArrQuestions[0].classList.remove('cacher'); // Enlever la classe 'cacher' pour la première question (pour débuter)
 
     },
+    // Fonction pour valider les réponses et rétroactions
+    validerReponse: function (idReponse, ctnElement) {
 
-    validerReponse: function (idReponse) {
         console.log("hello encore", idReponse);
+        console.log(objJSON.bonnesReponses, objJSON.bonnesReponses[this.intNoQuestion]);
+        
+        //Désactivé les autres réponses une fois la bonne ou mauvaise réponse à été choisie.
+        const arrBoutons = ctnElement.querySelectorAll('input[type=radio]');
+        arrBoutons.forEach(function(bouton){
+            bouton.disabled = true;
+        })
 
+        //Cacher bouton valider mes réponses une fois un choix a été fait et puis afficher bouton pour passer à la question suivante.
+        document.getElementById('validerReponse' + (this.intNoQuestion + 1)).classList.add('cacher');
+        document.getElementById('questionSuivante' + (this.intNoQuestion + 1)).classList.remove('cacher');
+       
         
 
+        if (idReponse == objJSON.bonnesReponses[this.intNoQuestion]) {
+            ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.positive;
+
+        } else {
+            ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.negative;
+        }
+            this.intBonnesReponses++;
+            ctnElement.querySelector('.question__explication').innerHTML = objJSON.explications["Q" + (this.intNoQuestion + 1)];
+    },
+
+    
+    afficherQuestion: function (numeroQuestion) {
 
     },
+
+    // Fonction pour afficher les resultats aux utilisateurs
     afficherResultats: function () {
 
     }
@@ -69,7 +95,8 @@ document.getElementById('demarrerQuiz')
 });
 document.getElementById('validerReponse1')
 .addEventListener('click', function (e) {
-    quiz.validerReponse(e.target.closest('.ctnQuestion').querySelector('input[type=radio]:checked').id)
+    const refCtnQuestion = e.target.closest('.ctnQuestion');
+    quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
 });
 
 
