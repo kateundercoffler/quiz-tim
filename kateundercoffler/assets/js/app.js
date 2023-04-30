@@ -30,15 +30,17 @@ const objJSON = {
     }
 };
 
-/* Objet Quiz */
 const quiz = {
-    intNoQuestion: 0,
+    intNoQuestion: 0,   
     intNbQuestions: 3,
     intBonnesReponses: 0,
 
     refArrQuestions: document.querySelectorAll('.ctnQuestion'), // Chercher tous les éléments qui ont la classe .ctnQuestion
     refBoutonSubmit: document.querySelector('.boutonValider'), //Chercher le bouton pour faire la validation des réponses
 
+    /**
+     * Cache l'intro et affiche la premiere question
+     */
     debuterQuiz: function () {
         console.log("hello world");
         console.log(this.refIntro);
@@ -77,12 +79,22 @@ const quiz = {
             ctnElement.querySelector('.question__explication').innerHTML = objJSON.explications["Q" + (this.intNoQuestion + 1)];
     },
 
-    
+   
+    cacherQuestion: function (numeroQuestion) {
+
+    },
+
+   
     afficherQuestion: function (numeroQuestion) {
 
     },
 
     // Fonction pour afficher les resultats aux utilisateurs
+    
+    /**
+     *
+     *
+     */
     afficherResultats: function () {
 
     }
