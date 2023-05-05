@@ -9,7 +9,7 @@ des input[type=radio] */
 const objJSON = {
     "retroactions": {
         "positive": "Bravo, c'est une bonne réponse !",
-        "negative": "Bon essai, mais la réponse attendue est !"
+        "negative": "Bon essai, mais la réponse attendue est "
     },
     "explications": {
         "Q1": "Le CSR peut contrôler la surpopulation de chats, diminuer les nuisances causées par les comportements de chats fertiles et diminuer les chats qui sont euthanasiés.",
@@ -17,9 +17,9 @@ const objJSON = {
         "Q3": "C'est important que le chat soit ramené dans un lieu familier car il connaît son environnement et il s'y est habitué. Sa communauté est comme sa maison !"
     },
     "bonnesReponses": [
-        "Q1B",
-        "Q2C",
-        "Q3B"
+        "B",
+        "C",
+        "B"
     ],
     "messages": {
         "resultatsDebut": "Vous avez obtenu un résultat de",
@@ -31,7 +31,7 @@ const objJSON = {
 };
 
 const quiz = {
-    intNoQuestion: 0,   
+    intNoQuestion: 0,
     intNbQuestions: 3,
     intBonnesReponses: 0,
 
@@ -55,42 +55,56 @@ const quiz = {
     validerReponse: function (idReponse, ctnElement) {
 
         console.log("hello encore", idReponse);
+        console.log(ctnElement);
         console.log(objJSON.bonnesReponses, objJSON.bonnesReponses[this.intNoQuestion]);
-        
+
         //Désactivé les autres réponses une fois la bonne ou mauvaise réponse à été choisie.
         const arrBoutons = ctnElement.querySelectorAll('input[type=radio]');
-        arrBoutons.forEach(function(bouton){
+        arrBoutons.forEach(function (bouton) {
             bouton.disabled = true;
         })
 
         //Cacher bouton valider mes réponses une fois un choix a été fait et puis afficher bouton pour passer à la question suivante.
         document.getElementById('validerReponse' + (this.intNoQuestion + 1)).classList.add('cacher');
         document.getElementById('questionSuivante' + (this.intNoQuestion + 1)).classList.remove('cacher');
-       
+
         
 
         if (idReponse == objJSON.bonnesReponses[this.intNoQuestion]) {
             ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.positive;
 
         } else {
-            ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.negative;
+            ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.negative + objJSON.bonnesReponses[this.intNoQuestion] + " !";
         }
-            this.intBonnesReponses++;
-            ctnElement.querySelector('.question__explication').innerHTML = objJSON.explications["Q" + (this.intNoQuestion + 1)];
-    },
+        this.intBonnesReponses++;
+        ctnElement.querySelector('.question__explication').innerHTML = objJSON.explications["Q" + (this.intNoQuestion + 1)];
 
-   
+        this.cacherQuestion();
+    },  
+
+ /* NEED TO SHOW THE IMAGE OF THE CORRECT ANSWER AHHH
+  kateundercoffler/images/question01-reponseB_642.jpg*/
+
     cacherQuestion: function (numeroQuestion) {
 
+        
+
+        this.refArrQuestions[this.intNoQuestion].classList.add('cacher');
+        this.intNoQuestion++
+        this.refArrQuestions[this.intNoQuestion].classList.remove('cacher');
+        console.log(this.intNoQuestion++)
+
+        
+
     },
 
-   
+
     afficherQuestion: function (numeroQuestion) {
 
     },
 
     // Fonction pour afficher les resultats aux utilisateurs
-    
+
     /**
      *
      *
@@ -102,14 +116,24 @@ const quiz = {
 
 /* Écouteurs d'événements */
 document.getElementById('demarrerQuiz')
-.addEventListener('click', function () {
-    quiz.debuterQuiz()
-});
+    .addEventListener('click', function () {
+        quiz.debuterQuiz()
+    });
 document.getElementById('validerReponse1')
-.addEventListener('click', function (e) {
-    const refCtnQuestion = e.target.closest('.ctnQuestion');
-    quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
-});
+    .addEventListener('click', function (e) {
+        const refCtnQuestion = e.target.closest('.ctnQuestion');
+        quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
+    });
+document.getElementById('validerReponse2')
+    .addEventListener('click', function (e) {
+        const refCtnQuestion = e.target.closest('.ctnQuestion');
+        quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
+    });
+/* document.getElementById('validerReponse3')
+    .addEventListener('click', function (e) {
+        const refCtnQuestion = e.target.closest('.ctnQuestion');
+        quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
+    }); */
 
 
 document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
@@ -118,6 +142,15 @@ document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
     })
 });
 
+// 1. hide the current question section (using intNoQuestion and adding your class "cacher")
+//2. increment intNoQuestion
+//3. reveal the new question (using intNoQuestion and removing your class "cacher")
+
+
+/* add a class on the question you just answered, and remove it from the next one
+get the right question dynamically 
+document.getElementByID("section_question" + intNoQuestion)
+*/
 
 
 
