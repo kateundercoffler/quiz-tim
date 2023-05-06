@@ -106,8 +106,7 @@
                     <legend>
                         <h3>Quels avantages le CSR apporte-t-il aux chats errants ?</h3>
                     </legend>
-                    <p class="question__retroaction"></p>
-                    <p class="question__explication"></p>
+                  
                     <ul class="choixReponses">
                         <li>
                             <input type="radio" name="Q1" id="Q1A" value="A" required class="visuallyhidden">
@@ -133,10 +132,12 @@
                         </li>
                     </ul>
                     <p class="erreur"></p>
+                    <p class="question__retroaction"></p>
+                    <p class="question__explication"></p>
                 </fieldset>
                 <button class="bouton" type="button" id="validerReponse1" name="validerReponse1" disabled>Valider ma
                     réponse</button>
-                <button class="bouton cacher" type="button" id="questionSuivante1" name="questionSuivante1">Passer à la
+                <button class="bouton cacher" disabled type="button" id="questionSuivante1" name="questionSuivante1">Passer à la
                     question suivante</button>
             </div>
             <!-- Début de la question 2 -->
@@ -165,8 +166,7 @@
                     <legend>
                         <h3>Si un chat errant a l'oreille gauche coupée, ça veut dire quoi ?</h3>
                     </legend>
-                    <p class="question__retroaction"></p>
-                    <p class="question__explication"></p>
+                
                     <ul class="choixReponses">
                         <li>
                             <input type="radio" name="Q2" id="Q2A" value="A" required class="visuallyhidden">
@@ -187,10 +187,12 @@
                         </li>
                     </ul>
                     <p class="erreur"></p>
+                    <p class="question__retroaction"></p>
+                    <p class="question__explication"></p>
                 </fieldset>
                 <button class="bouton" type="button" id="validerReponse2" name="validerReponse2" disabled>Valider ma
                     réponse</button>
-                <button class="bouton cacher" type="button" id="questionSuivante2" name="questionSuivante2">Passer à la
+                <button class="bouton cacher" type="button" id="questionSuivante2" disabled name="questionSuivante2">Passer à la
                     question suivante</button>
             </div>
             <!-- Début de la question 3 -->
@@ -219,8 +221,7 @@
                     <legend>
                         <h3>Pourquoi est-ce nécessaire de retourner le chat dans un lieu qui lui est familier ?</h3>
                     </legend>
-                    <p class="question__retroaction"></p>
-                    <p class="question__explication"></p>
+                  
                     <ul class="choixReponses">
                         <li>
                             <input type="radio" name="Q3" id="Q3A" value="A" required class="visuallyhidden">
@@ -241,13 +242,16 @@
                         </li>
                     </ul>
                     <p class="erreur"></p>
+                    <p class="question__retroaction"></p>
+                    <p class="question__explication"></p>
                 </fieldset>
+                <button class="bouton" type="button" id="validerReponse3" name="validerReponse3" disabled>Valider ma
+                    réponse</button>
+    
+                <button class="bouton cacher" type="submit" id="questionSuivante3" name="afficherResultats" disabled value="true">Voir mes
+                    résultats</button>
             </div>
-            <button class="bouton cacher" type="button" id="validerReponse3" name="validerReponse3" disabled>Valider ma
-                réponse</button>
-
-            <button class="bouton cacher" type="submit" id="validerQuiz" name="validerQuiz" disabled value="true">Voir mes
-                résultats</button>
+            
             </div>
         </form>
     </main>

@@ -17,9 +17,9 @@ const objJSON = {
         "Q3": "C'est important que le chat soit ramené dans un lieu familier car il connaît son environnement et il s'y est habitué. Sa communauté est comme sa maison !"
     },
     "bonnesReponses": [
-        "B",
-        "C",
-        "B"
+        "Q1B",
+        "Q2C",
+        "Q3B"
     ],
     "messages": {
         "resultatsDebut": "Vous avez obtenu un résultat de",
@@ -67,40 +67,29 @@ const quiz = {
         //Cacher bouton valider mes réponses une fois un choix a été fait et puis afficher bouton pour passer à la question suivante.
         document.getElementById('validerReponse' + (this.intNoQuestion + 1)).classList.add('cacher');
         document.getElementById('questionSuivante' + (this.intNoQuestion + 1)).classList.remove('cacher');
+        document.getElementById('questionSuivante' + (this.intNoQuestion + 1)).disabled = false;
 
-        
+
 
         if (idReponse == objJSON.bonnesReponses[this.intNoQuestion]) {
             ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.positive;
 
         } else {
-            ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.negative + objJSON.bonnesReponses[this.intNoQuestion] + " !";
+            ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.negative + objJSON.bonnesReponses[this.intNoQuestion][2] + " !";
         }
         this.intBonnesReponses++;
         ctnElement.querySelector('.question__explication').innerHTML = objJSON.explications["Q" + (this.intNoQuestion + 1)];
 
-        this.cacherQuestion();
-    },  
-
- /* NEED TO SHOW THE IMAGE OF THE CORRECT ANSWER AHHH
-  kateundercoffler/images/question01-reponseB_642.jpg*/
-
-    cacherQuestion: function (numeroQuestion) {
-
-        
-
-        this.refArrQuestions[this.intNoQuestion].classList.add('cacher');
-        this.intNoQuestion++
-        this.refArrQuestions[this.intNoQuestion].classList.remove('cacher');
-        console.log(this.intNoQuestion++)
-
-        
 
     },
 
+    /* NEED TO SHOW THE IMAGE OF THE CORRECT ANSWER AHHH
+     kateundercoffler/images/question01-reponseB_642.jpg*/
 
-    afficherQuestion: function (numeroQuestion) {
-
+    afficherQuestionSuivante: function () {
+        this.refArrQuestions[this.intNoQuestion].classList.add('cacher');
+        this.intNoQuestion++
+        this.refArrQuestions[this.intNoQuestion].classList.remove('cacher');
     },
 
     // Fonction pour afficher les resultats aux utilisateurs
@@ -110,6 +99,10 @@ const quiz = {
      *
      */
     afficherResultats: function () {
+        console.log("afficherResultats");
+
+        this.refArrQuestions[this.intNoQuestion].classList.add('cacher');
+
 
     }
 }
@@ -129,12 +122,26 @@ document.getElementById('validerReponse2')
         const refCtnQuestion = e.target.closest('.ctnQuestion');
         quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
     });
-/* document.getElementById('validerReponse3')
+document.getElementById('validerReponse3')
     .addEventListener('click', function (e) {
         const refCtnQuestion = e.target.closest('.ctnQuestion');
         quiz.validerReponse(refCtnQuestion.querySelector('input[type=radio]:checked').id, refCtnQuestion);
-    }); */
+    });
 
+document.getElementById('questionSuivante1')
+    .addEventListener('click', function (e) {
+        quiz.afficherQuestionSuivante()
+    });
+document.getElementById('questionSuivante2')
+    .addEventListener('click', function (e) {
+        quiz.afficherQuestionSuivante()
+    });
+document.getElementById('questionSuivante3')
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+        quiz.afficherResultats()
+        
+    });
 
 document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
     btnRadio.addEventListener('click', function (e) {
