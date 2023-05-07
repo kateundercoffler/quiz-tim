@@ -424,6 +424,8 @@ button:hover:not([disabled]) {
 
 /* SECTION PAGE RESULTATS */
 
+/* css et html pour le pie chart est de https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/ */
+
 .cacher {
     display: none;
 }
