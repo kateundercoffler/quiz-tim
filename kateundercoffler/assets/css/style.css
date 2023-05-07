@@ -20,7 +20,7 @@ h3 {
     color: #323232;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     h3 {
         display: flex;
         justify-content: center;
@@ -31,7 +31,6 @@ h3 {
 
 body {
     background-color: #FCF1EC;
-    margin-bottom: 22px;
 }
 
 /* ENTÊTE  */
@@ -49,6 +48,7 @@ body {
 
 @media (min-width: 768px) {
     .header-banner {
+        margin-bottom: 45px;
         justify-content: left;
         align-items: center;
     }
@@ -68,7 +68,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .header-banner_logo {
         max-width: 23rem;
         margin-left: 70px;
@@ -95,7 +95,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .header-span {
         position: static;
         font-size: 1.5rem;
@@ -123,7 +123,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .main-section_graphique {
         right: -41px;
         top: 558px;
@@ -163,7 +163,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .barre-progres_container {
         margin-right: auto;
     }
@@ -175,12 +175,14 @@ body {
     width: 25%;
     height: 100%;
 }
+
 .barre-progres_barre2 {
     background-color: #F6C67E;
     border-radius: 40px;
     width: 50%;
     height: 100%;
 }
+
 .barre-progres_barre3 {
     background-color: #F6C67E;
     border-radius: 40px;
@@ -287,7 +289,7 @@ form {
     display: block;
 } */
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .main-section-card {
         display: flex;
         flex-direction: row;
@@ -299,7 +301,8 @@ form {
 .main-section_paragraphes {
     padding: 15px;
 }
-/* @media (min-width: 1000px) {
+
+/* @media (min-width: 768px) {
     .main-section_paragraphes {
         display: flex;
         flex-direction: column;
@@ -334,35 +337,40 @@ ul {
     margin-inline: 0;
     padding-inline: 0;
     padding-block: 0;
-    
+    padding: 0 30px;
+
 }
 
 .section-quiz_status {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
-@media (min-width: 1000px) {
+
+@media (min-width: 768px) {
     .section-quiz_status {
-        margin-right: 879px;
-        /* faut changer tantôt */
         font-size: 1.25rem;
-        
-
     }
-}
-
-@media (min-width: 1000px) {
     .section-quiz {
         display: flex;
         justify-content: left;
-        align-items: left;
-        padding-bottom: 82px;
+        flex-wrap: wrap;
+    }
+    .quiz-picture-boite, .choixReponses{
+        width: 48%;
     }
 }
 
+.section_messages p {
+    margin-block: 0;
+    margin: 15px 0;
+}
+.section_messages {
+   background: #fff;
+   padding: 10px;
+   border: #F6C67E 4px solid;
+   border-radius: 10px;
+   margin: 15px 0;
+}
 
 /* BORDER RÉPONSES */
 label {
@@ -388,11 +396,18 @@ label {
 
 
 button {
-    margin-left: auto;
     margin-bottom: 30px;
+    margin-top: 10px;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 2px 8px 8px -4px #414440;
+    float:right;
+}
+
+button:hover:not([disabled]) {
+    background: #F9B093;
+    border: 1px solid #787878;
+    border-radius: 10px;
 }
 
 /* FOOTER */
@@ -407,58 +422,118 @@ button {
 
 }
 
-/* SECTION POUR JAVASCRIPT */
+/* SECTION PAGE RESULTATS */
 
 .cacher {
     display: none;
 }
 
-.pie {
-    width: 100px; height: 100px;
-    transform: rotate(-90deg);
-    background: rgb(85, 85, 85);
+.pie-chart_svg {
+    width: 250px;
+    height: 250px;
+    background: transparent;
     border-radius: 50%;
-  }
-  
-  circle {
-    fill: rgb(0, 0, 0);
-    stroke: rgb(255, 162, 48);
+}
+.pie-chart_texte {
+    display: block;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 44%;
+    left: 44%;
+}
+.pie-chart {
+    position: relative;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+circle {
+    fill: rgb(224, 224, 224);
+    stroke: #9AB486;
     stroke-width: 32;
-  }
-  .pie-filled-1-of-3 {
+}
+
+.pie-filled-1-of-3 {
     stroke-dasharray: 33 100;
-  }
-  .pie-filled-2-of-3 {
+}
+
+.pie-filled-2-of-3 {
     stroke-dasharray: 66 100;
-  }
-  .pie-filled-0-of-3 {
+}
+
+.pie-filled-0-of-3 {
     stroke-dasharray: 0 100;
-  }
-  
-  
-
-  input[type="radio"]:checked+label
- {
-    background: rgb(208, 208, 208);
-  }
+}
 
 
-  
-  input[type="radio"]:not([disabled])+label:hover {
-    background: #DDD;
-  }
-  input[type="radio"]:disabled:not(:checked)+label {
-  opacity: .5;
-  cursor:default;
-  }
+
+input[type="radio"]:checked+label {
+    background: #FAD8CB;
+    border: 1px solid #787878;
+    border-radius: 10px;
+}
 
 
-  .bonneReponse input[type="radio"]:checked+label {
-    background: rgb(94, 202, 0);
-    cursor:default;
-  }
 
-  .mauvaiseReponse input[type="radio"]:checked+label {
-    background: rgb(202, 0, 0);
-    cursor:default;
-  }
+input[type="radio"]:not([disabled])+label:hover {
+    background: #F9B093;
+    border: 1px solid #787878;
+    border-radius: 10px;
+}
+
+input[type="radio"]:disabled:not(:checked)+label {
+    opacity: .5;
+    cursor: default;
+}
+
+
+.bonneReponse input[type="radio"]:checked+label {
+    background: rgb(183, 234, 139);
+    cursor: default;
+}
+
+.mauvaiseReponse input[type="radio"]:checked+label {
+    background: rgb(252, 148, 148);
+    cursor: default;
+}
+
+.section-resultat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-resultat .quiz-picture-boite,
+.section-resultat .pie-chart{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+@media (min-width: 768px) {
+    .section-resultat {
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+    .section-resultat .quiz-picture-boite,
+    .section-resultat .pie-chart{
+        width: 48%;
+    }
+    .section-resultat .section-resultat_texte,
+    .section-resultat .section-resultat_message {
+        width: 100%;
+    }
+
+}
+.section-resultat_texte{
+    font-size: 1.4rem;
+}
+
+.section-resultat_texte,
+ .section-resultat_message {
+    font-weight: bold;
+    text-align: center;
+}

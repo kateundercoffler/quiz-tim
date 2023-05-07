@@ -24,9 +24,9 @@ const objJSON = {
     "messages": {
         "resultatsDebut": "Vous avez obtenu un résultat de",
         "note0": "Awh, bon essai. Vous auriez pu faire mieux, il y a beaucoup d'information sur le CSR en ligne, faites la recherche et essayez encore plus tard",
-        "note33": "Pas trop pire, vous auriez pu faire mieux. Je vous suggère de googler le CSR.",
-        "note66": "Wow, tellement bon, vous connaissez le CSR en général!",
-        "note100": "Félicitations, vous êtes un CSR héro ! Avez-vous déjà aidé les chats à Québec?"
+        "note1": "Pas trop pire, vous auriez pu faire mieux. Je vous suggère de googler le CSR.",
+        "note2": "Wow, tellement bon, vous connaissez le CSR en général!",
+        "note3": "Félicitations, vous êtes un CSR héro ! Avez-vous déjà aidé les chats à Québec?"
     }
 };
 
@@ -69,6 +69,9 @@ const quiz = {
         document.getElementById('questionSuivante' + (this.intNoQuestion + 1)).classList.remove('cacher');
         document.getElementById('questionSuivante' + (this.intNoQuestion + 1)).disabled = false;
 
+        ctnElement.querySelector('.section_messages').classList.remove('cacher');
+
+        ctnElement.querySelector('.quiz-picture-boite_img').src = "./images/question0" + (this.intNoQuestion + 1) + "-reponse" + idReponse[2] + "_642.jpg"
 
 
         if (idReponse == objJSON.bonnesReponses[this.intNoQuestion]) {
@@ -109,7 +112,8 @@ const quiz = {
         const refMain = document.querySelector('main');
 
         const tag = document.createElement("div");
-        const content = '<div>Votre resultat final:</div><span>' + this.intBonnesReponses + '/3</span><svg class="pie" viewBox="0 0 32 32"><circle class="pie-filled-' + this.intBonnesReponses + '-of-3" r="16" cx="16" cy="16" /></svg> <button class="bouton" type="button" id="jouerEncore" name="jouerEncore">Jouer encore?</button>'
+        tag.classList.add('section-resultat')
+        const content = '<div class="section-resultat_texte">Votre resultat final:</div><div class="quiz-picture-boite"><div class="quiz-picture-boite_symbols"><div class="quiz-picture-boite_symbol">╳</div><div class="quiz-picture-boite_symbol">▢</div><div class="quiz-picture-boite_symbol">─</div></div><picture class="main-section_picture"><source srcset="./images/timQuiz-introduction_642.jpg" media="(max-width:600px)"><source srcset="./images/timQuiz-introduction_1060.jpg" media="(max-width:1060px)"><img class="main-section_image" src="./images/timQuiz-introduction_1284.jpg" alt="Chat noir en train de manger qui regarde à la photo appareil"></picture><div class="quiz-picture-boite_bar"><div class="quiz-picture-boite_bar-start">&lt;</div><div class="quiz-picture-boite_bar-line"></div><div class="quiz-picture-boite_bar-end">&gt;</div></div></div><div class="pie-chart"><span class="pie-chart_texte">' + this.intBonnesReponses + '/3</span><svg class="pie-chart_svg" viewBox="0 0 32 32"><circle class="pie-filled-' + this.intBonnesReponses + '-of-3" r="16" cx="16" cy="16"/></svg></div><div class="section-resultat_message">' + objJSON.messages['note' + this.intBonnesReponses] +'</div><button class="bouton" type="button" id="jouerEncore" name="jouerEncore">Jouer encore?</button>'
         tag.innerHTML = content;
         refMain.append(tag)
 
