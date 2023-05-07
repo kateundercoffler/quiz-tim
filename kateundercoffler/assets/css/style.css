@@ -308,12 +308,10 @@ form {
 } */
 
 .choixReponses {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 18px;
 }
 
 /* IMAGES */
@@ -336,6 +334,7 @@ ul {
     margin-inline: 0;
     padding-inline: 0;
     padding-block: 0;
+    
 }
 
 .section-quiz_status {
@@ -366,15 +365,27 @@ ul {
 
 
 /* BORDER RÉPONSES */
-li {
+label {
     border: 1px solid #3E3E3E;
     background-color: #FCF1EC;
     box-shadow: 7px 8px 8px -8px #666666;
     border-radius: 10px;
-    padding: 19px;
     margin: 5px 0 5px 0;
     width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    /* WebKit */
+    -moz-appearance: button;
+    /* Mozilla */
+    -o-appearance: button;
+    /* Opera */
+    -ms-appearance: button;
+    /* Internet Explorer */
+    appearance: button;
+    /* CSS3 */
 }
+
 
 button {
     margin-left: auto;
@@ -401,3 +412,53 @@ button {
 .cacher {
     display: none;
 }
+
+.pie {
+    width: 100px; height: 100px;
+    transform: rotate(-90deg);
+    background: rgb(85, 85, 85);
+    border-radius: 50%;
+  }
+  
+  circle {
+    fill: rgb(0, 0, 0);
+    stroke: rgb(255, 162, 48);
+    stroke-width: 32;
+  }
+  .pie-filled-1-of-3 {
+    stroke-dasharray: 33 100;
+  }
+  .pie-filled-2-of-3 {
+    stroke-dasharray: 66 100;
+  }
+  .pie-filled-0-of-3 {
+    stroke-dasharray: 0 100;
+  }
+  
+  
+
+  input[type="radio"]:checked+label
+ {
+    background: rgb(208, 208, 208);
+  }
+
+
+  
+  input[type="radio"]:not([disabled])+label:hover {
+    background: #DDD;
+  }
+  input[type="radio"]:disabled:not(:checked)+label {
+  opacity: .5;
+  cursor:default;
+  }
+
+
+  .bonneReponse input[type="radio"]:checked+label {
+    background: rgb(94, 202, 0);
+    cursor:default;
+  }
+
+  .mauvaiseReponse input[type="radio"]:checked+label {
+    background: rgb(202, 0, 0);
+    cursor:default;
+  }

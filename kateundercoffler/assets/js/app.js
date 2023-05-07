@@ -73,11 +73,14 @@ const quiz = {
 
         if (idReponse == objJSON.bonnesReponses[this.intNoQuestion]) {
             ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.positive;
+            ctnElement.querySelector('.choixReponses').classList.add('bonneReponse');
+            this.intBonnesReponses++;
 
         } else {
             ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.negative + objJSON.bonnesReponses[this.intNoQuestion][2] + " !";
+            ctnElement.querySelector('.choixReponses').classList.add('mauvaiseReponse')
         }
-        this.intBonnesReponses++;
+       
         ctnElement.querySelector('.question__explication').innerHTML = objJSON.explications["Q" + (this.intNoQuestion + 1)];
 
 
@@ -103,6 +106,16 @@ const quiz = {
 
         this.refArrQuestions[this.intNoQuestion].classList.add('cacher');
 
+        const refMain = document.querySelector('main');
+
+        const tag = document.createElement("div");
+        const content = '<div>Votre resultat final:</div><span>' + this.intBonnesReponses + '/3</span><svg class="pie" viewBox="0 0 32 32"><circle class="pie-filled-' + this.intBonnesReponses + '-of-3" r="16" cx="16" cy="16" /></svg> <button class="bouton" type="button" id="jouerEncore" name="jouerEncore">Jouer encore?</button>'
+        tag.innerHTML = content;
+        refMain.append(tag)
+
+        document.getElementById('jouerEncore').addEventListener('click', function () {
+            location.reload();
+        })
 
     }
 }
@@ -140,7 +153,7 @@ document.getElementById('questionSuivante3')
     .addEventListener('click', function (e) {
         e.preventDefault();
         quiz.afficherResultats()
-        
+
     });
 
 document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
@@ -158,8 +171,3 @@ document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
 get the right question dynamically 
 document.getElementByID("section_question" + intNoQuestion)
 */
-
-
-
-
-
