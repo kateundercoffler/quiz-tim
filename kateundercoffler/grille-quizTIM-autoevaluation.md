@@ -60,7 +60,7 @@ __Note (A-E)__: A
 
 ## Critère 7 :  Finalisation 
 ### Obligatoire (1)
-- [ ] Créer le favicon à l'aide du service en ligne https://realfavicongenerator.net/
+- [x] Créer le favicon à l'aide du service en ligne https://realfavicongenerator.net/
 - [ ] Compléter le README par un bilan du projet
     - [ ] Ce que vous avez bien réussi et dont vous êtes fiers
     - [ ] Ce qui vous a causé le plus de difficultés
