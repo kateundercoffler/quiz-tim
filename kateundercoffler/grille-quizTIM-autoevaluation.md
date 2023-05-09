@@ -8,7 +8,7 @@ D = 65%, (Atteinte minimale du critère)
 E = 55% (Lacunes majeures)
 
 ## Critère 1 : HTML (1.5 points)
-- [ ] le code a été validé et ne comporte aucune erreur
+- [X] le code a été validé et ne comporte aucune erreur
 - [ ] Intégrer des images réactives en utilisant picture, source et ses attributs
 
 __Commentaire sur critère HTML__: 

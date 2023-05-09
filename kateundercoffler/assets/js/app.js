@@ -71,8 +71,10 @@ const quiz = {
 
         ctnElement.querySelector('.section_messages').classList.remove('cacher');
 
-        ctnElement.querySelector('.quiz-picture-boite_img').src = "./images/question0" + (this.intNoQuestion + 1) + "-reponse" + idReponse[2] + "_642.jpg"
-
+        ctnElement.querySelector('.quiz-picture-boite_img').src = "./images/question0" + (this.intNoQuestion + 1) + "-reponse" + idReponse[2] + "_1284.jpg"
+        ctnElement.querySelectorAll('.quiz-section_picture source')[0].srcset = "./images/question0" + (this.intNoQuestion + 1) + "-reponse" + idReponse[2] + "_642.jpg"
+        ctnElement.querySelectorAll('.quiz-section_picture source')[1].srcset = "./images/question0" + (this.intNoQuestion + 1) + "-reponse" + idReponse[2] + "_1060.jpg"
+        
 
         if (idReponse == objJSON.bonnesReponses[this.intNoQuestion]) {
             ctnElement.querySelector('.question__retroaction').innerHTML = objJSON.retroactions.positive;
