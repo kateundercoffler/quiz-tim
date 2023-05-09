@@ -9,6 +9,7 @@ E = 55% (Lacunes majeures)
 
 ## Critère 1 : HTML (1.5 points)
 - [X] le code a été validé et ne comporte aucune erreur
+- Validateur : Warning: The banner role is unnecessary for element header. Aucun erreur mais j'en ai cela.
 - [X] Intégrer des images réactives en utilisant picture, source et ses attributs
 
 __Commentaire sur critère HTML__: 
@@ -26,9 +27,9 @@ __Note (A-E)__: A
 
 ## Critère 3 :  JavaScript / données JSON (2.5)
 - [X] les rétroactions, les réponses et les explications ne sont pas codés en "dur", tous les textes sont extraits de l'objet JSON adapté pour le sujet.
-- [ ] dans la version  pauvre (javascript désactivé)
-    - [ ] le formulaire s'affiche au complet (les 3 questions et le bouton de soumission)
-    - [ ] la balise form doit être présente avec comme action "index.html"
+- [X] dans la version  pauvre (javascript désactivé)
+    - [X] le formulaire s'affiche au complet (les 3 questions et le bouton de soumission)
+    - [X] la balise form doit être présente avec comme action "index.html"
     - [ ] aucun élément lié à la version riche n'apparait
 - [ ] dans la version riche
     - [ ] le déroulement décrit dans l'énoncé est respecté et complet

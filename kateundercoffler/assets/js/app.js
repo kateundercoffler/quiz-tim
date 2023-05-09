@@ -45,7 +45,11 @@ const quiz = {
         });
 
         document.querySelector('#questionSuivante3').disabled = true;
+        document.querySelector('#demarrerQuiz').classList.remove("cacher");
         document.querySelector('#questionSuivante3').classList.add("cacher");
+        document.querySelectorAll('.valider').forEach(function(element) {
+            element.classList.remove("cacher");
+        });
     },
     /**
      * Cache l'intro et affiche la premiere question
