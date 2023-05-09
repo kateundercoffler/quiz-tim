@@ -388,16 +388,19 @@ label {
 button {
     margin-bottom: 30px;
     margin-top: 10px;
+    margin-right: 5px;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 2px 8px 8px -4px #414440;
     float:right;
+    
 }
 
 button:hover:not([disabled]) {
     background: #F9B093;
     border: 1px solid #787878;
     border-radius: 10px;
+    animation: pulse 1s;
 }
 
 /* FOOTER */
@@ -473,6 +476,7 @@ input[type="radio"]:not([disabled])+label:hover {
     background: #F9B093;
     border: 1px solid #787878;
     border-radius: 10px;
+    animation: pulse 1s;
 }
 input[type="radio"]:focus:not([disabled])+label {
     background: #F9B093;

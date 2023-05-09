@@ -15,9 +15,9 @@ __Commentaire sur critère HTML__:
 __Note (A-E)__: A
 
 ## Critère 2: Styles CSS (2.5)
-- [ ] les tailles de polices sont réactives (plus grandes sur écran large)
-- [ ] il y a au moins un point de rupture et au moins 2 variantes de mise en page (écran étroit et écran large)
-- [ ] utiliser avec à propos des grilles css et des flexbox
+- [X] les tailles de polices sont réactives (plus grandes sur écran large)
+- [X] il y a au moins un point de rupture et au moins 2 variantes de mise en page (écran étroit et écran large)
+- [X] utiliser avec à propos des grilles css et des flexbox
 - [ ] de petites animations sont ajoutées pour agrémenter le parcours de l'utilisateur
 - [ ] la structure des fichiers css est conforme aux exigences de l'énoncé. Soit, que seul le fichier *style.css* est relié à la page html et ce fichier importe dans l'ordre `normalize`, `utilitaires` et `typo`. Des fichiers complémentaires ont été ajoutés au besoin pour les grilles et les animations.
 
