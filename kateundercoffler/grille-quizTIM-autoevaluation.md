@@ -38,25 +38,25 @@ __Commentaire sur critère JavaScript__:
 __Note (A-E)__: A
 
 ## Critère 4 :  Interactivité riche (1)
-- [ ] les boutons radio et les boutons d'action ont plusieurs états (désactivé, normal, survol, focus)
-- [ ] des transitions sont utilisé pour donner de l'effet aux changements d'état des éléments interactifs
+- [x] les boutons radio et les boutons d'action ont plusieurs états (désactivé, normal, survol, focus)
+- [x] des transitions sont utilisé pour donner de l'effet aux changements d'état des éléments interactifs
  
 __Commentaire sur critère interactivité / transitions / animations__: 
-__Note (A-E)__: 
+__Note (A-E)__: A
 
 ## Critère 5 :  Techniques d'accessibilité (1)
-- [ ] Il est possible de compléter le formulaire (répondre aux questions et obtenir un résultat) en se servant uniquement du clavier
-- [ ] Les attributs role ont été ajoutés sur les zones d'entête, de pied de page, de contenu principal et sur le formulaire
+- [x] Il est possible de compléter le formulaire (répondre aux questions et obtenir un résultat) en se servant uniquement du clavier
+- [x] Les attributs role ont été ajoutés sur les zones d'entête, de pied de page, de contenu principal et sur le formulaire
 - [ ] Les images ont des textes alternatifs bien choisis (alt)
  
 __Commentaire sur critère accessibilité__: 
 __Note (A-E)__: 
 
 ## Critère 6 :  Versionnage (0.5)
-- [ ] utilisation régulière du versionnage
+- [x] utilisation régulière du versionnage
  
 __Commentaire sur critère versionnage__: 
-__Note (A-E)__: 
+__Note (A-E)__: A
 
 ## Critère 7 :  Finalisation 
 ### Obligatoire (1)
