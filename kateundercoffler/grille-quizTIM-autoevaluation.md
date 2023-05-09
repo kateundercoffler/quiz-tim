@@ -30,12 +30,12 @@ __Note (A-E)__: A
 - [X] dans la version  pauvre (javascript désactivé)
     - [X] le formulaire s'affiche au complet (les 3 questions et le bouton de soumission)
     - [X] la balise form doit être présente avec comme action "index.html"
-    - [ ] aucun élément lié à la version riche n'apparait
-- [ ] dans la version riche
-    - [ ] le déroulement décrit dans l'énoncé est respecté et complet
+    - [X] aucun élément lié à la version riche n'apparait
+- [X] dans la version riche
+    - [X] le déroulement décrit dans l'énoncé est respecté et complet
 
 __Commentaire sur critère JavaScript__: 
-__Note (A-E)__: 
+__Note (A-E)__: A
 
 ## Critère 4 :  Interactivité riche (1)
 - [ ] les boutons radio et les boutons d'action ont plusieurs états (désactivé, normal, survol, focus)
