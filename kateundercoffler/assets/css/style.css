@@ -350,12 +350,16 @@ ul {
     .section-quiz_status {
         font-size: 1.25rem;
     }
-    .section-quiz {
+    .section-quiz,
+    .main-section-card {
         display: flex;
         justify-content: left;
         flex-wrap: wrap;
     }
-    .quiz-picture-boite, .choixReponses{
+    .quiz-picture-boite,
+    .main-section_paragraphes, 
+    .quiz-picture-boite, 
+    .choixReponses{
         width: 48%;
     }
 }
