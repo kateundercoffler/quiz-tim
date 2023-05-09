@@ -38,6 +38,15 @@ const quiz = {
     refArrQuestions: document.querySelectorAll('.ctnQuestion'), // Chercher tous les éléments qui ont la classe .ctnQuestion
     refBoutonSubmit: document.querySelector('.boutonValider'), //Chercher le bouton pour faire la validation des réponses
 
+    initialiserQuiz: function () {
+        console.log("beep, boop")
+        document.querySelectorAll('.ctnQuestion').forEach(function(element) {
+            element.classList.add("cacher");
+        });
+
+        document.querySelector('#questionSuivante3').disabled = true;
+        document.querySelector('#questionSuivante3').classList.add("cacher");
+    },
     /**
      * Cache l'intro et affiche la premiere question
      */
@@ -167,13 +176,5 @@ document.querySelectorAll('[type=radio').forEach(function (btnRadio) {
         e.target.closest('.ctnQuestion').querySelector('.bouton').disabled = false;
     })
 });
-
-// 1. hide the current question section (using intNoQuestion and adding your class "cacher")
-//2. increment intNoQuestion
-//3. reveal the new question (using intNoQuestion and removing your class "cacher")
-
-
-/* add a class on the question you just answered, and remove it from the next one
-get the right question dynamically 
-document.getElementByID("section_question" + intNoQuestion)
-*/
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+document.addEventListener("DOMContentLoaded", (event) => {quiz.initialiserQuiz()});

@@ -18,14 +18,14 @@ __Note (A-E)__: A
 - [X] les tailles de polices sont réactives (plus grandes sur écran large)
 - [X] il y a au moins un point de rupture et au moins 2 variantes de mise en page (écran étroit et écran large)
 - [X] utiliser avec à propos des grilles css et des flexbox
-- [ ] de petites animations sont ajoutées pour agrémenter le parcours de l'utilisateur
-- [ ] la structure des fichiers css est conforme aux exigences de l'énoncé. Soit, que seul le fichier *style.css* est relié à la page html et ce fichier importe dans l'ordre `normalize`, `utilitaires` et `typo`. Des fichiers complémentaires ont été ajoutés au besoin pour les grilles et les animations.
+- [X] de petites animations sont ajoutées pour agrémenter le parcours de l'utilisateur
+- [X] la structure des fichiers css est conforme aux exigences de l'énoncé. Soit, que seul le fichier *style.css* est relié à la page html et ce fichier importe dans l'ordre `normalize`, `utilitaires` et `typo`. Des fichiers complémentaires ont été ajoutés au besoin pour les grilles et les animations.
 
 __Commentaire sur critère CSS__: 
-__Note (A-E)__: 
+__Note (A-E)__: A
 
 ## Critère 3 :  JavaScript / données JSON (2.5)
-- [ ] les rétroactions, les réponses et les explications ne sont pas codés en "dur", tous les textes sont extraits de l'objet JSON adapté pour le sujet.
+- [X] les rétroactions, les réponses et les explications ne sont pas codés en "dur", tous les textes sont extraits de l'objet JSON adapté pour le sujet.
 - [ ] dans la version  pauvre (javascript désactivé)
     - [ ] le formulaire s'affiche au complet (les 3 questions et le bouton de soumission)
     - [ ] la balise form doit être présente avec comme action "index.html"
