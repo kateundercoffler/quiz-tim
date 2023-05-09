@@ -103,10 +103,7 @@ const quiz = {
 
 
     },
-
-    /* NEED TO SHOW THE IMAGE OF THE CORRECT ANSWER AHHH
-     kateundercoffler/images/question01-reponseB_642.jpg*/
-
+    
     afficherQuestionSuivante: function () {
         this.refArrQuestions[this.intNoQuestion].classList.add('cacher');
         this.intNoQuestion++

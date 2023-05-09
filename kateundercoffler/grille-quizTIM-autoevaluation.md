@@ -9,10 +9,9 @@ E = 55% (Lacunes majeures)
 
 ## Critère 1 : HTML (1.5 points)
 - [X] le code a été validé et ne comporte aucune erreur
-- Validateur : Warning: The banner role is unnecessary for element header. Aucun erreur mais j'en ai cela.
 - [X] Intégrer des images réactives en utilisant picture, source et ses attributs
 
-__Commentaire sur critère HTML__: 
+__Commentaire sur critère HTML__: - Validateur : Warning: The banner role is unnecessary for element header. Aucun erreur mais j'en ai cela.
 __Note (A-E)__: A
 
 ## Critère 2: Styles CSS (2.5)
@@ -41,16 +40,16 @@ __Note (A-E)__: A
 - [x] les boutons radio et les boutons d'action ont plusieurs états (désactivé, normal, survol, focus)
 - [x] des transitions sont utilisé pour donner de l'effet aux changements d'état des éléments interactifs
  
-__Commentaire sur critère interactivité / transitions / animations__: 
-__Note (A-E)__: A
+__Commentaire sur critère interactivité / transitions / animations__: J'aurais pu ajouter plus de transitions, surtout entre chaque question.
+__Note (A-E)__: B
 
 ## Critère 5 :  Techniques d'accessibilité (1)
 - [x] Il est possible de compléter le formulaire (répondre aux questions et obtenir un résultat) en se servant uniquement du clavier
 - [x] Les attributs role ont été ajoutés sur les zones d'entête, de pied de page, de contenu principal et sur le formulaire
 - [ ] Les images ont des textes alternatifs bien choisis (alt)
  
-__Commentaire sur critère accessibilité__: 
-__Note (A-E)__: 
+__Commentaire sur critère accessibilité__:  J'ai des textes alternatifs pour les images des questions, mais quand ils changent selon la réponse donné, je ne les ai pas changées.
+__Note (A-E)__: B (.5)
 
 ## Critère 6 :  Versionnage (0.5)
 - [x] utilisation régulière du versionnage
