@@ -9,10 +9,10 @@ E = 55% (Lacunes majeures)
 
 ## Critère 1 : HTML (1.5 points)
 - [X] le code a été validé et ne comporte aucune erreur
-- [ ] Intégrer des images réactives en utilisant picture, source et ses attributs
+- [X] Intégrer des images réactives en utilisant picture, source et ses attributs
 
 __Commentaire sur critère HTML__: 
-__Note (A-E)__: 
+__Note (A-E)__: A
 
 ## Critère 2: Styles CSS (2.5)
 - [ ] les tailles de polices sont réactives (plus grandes sur écran large)

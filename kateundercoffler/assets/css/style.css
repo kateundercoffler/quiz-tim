@@ -488,6 +488,12 @@ input[type="radio"]:not([disabled])+label:hover {
     border: 1px solid #787878;
     border-radius: 10px;
 }
+input[type="radio"]:focus:not([disabled])+label {
+    background: #F9B093;
+    border: 4px solid #7B322E;
+    border-radius: 10px;
+    
+}
 
 input[type="radio"]:disabled:not(:checked)+label {
     opacity: .5;
