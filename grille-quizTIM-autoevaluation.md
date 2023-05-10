@@ -69,11 +69,11 @@ __Note (A-E)__: A
     - [X] Ce que vous avez bien réussi et dont vous êtes fiers
     - [X] Ce qui vous a causé le plus de difficultés
     - [X] Ce qui pourrait être amélioré ou n'est pas terminé
-- [ ] Dernier commit/push dans le dépôt privé sur Github
-- [ ] Dernière mise en ligne sur timunix3.csfoy.ca/~quiz-TIM/ 
+- [x] Dernier commit/push dans le dépôt privé sur Github
+- [x] Dernière mise en ligne sur timunix3.csfoy.ca/~quiz-TIM/ 
  
 __Commentaire sur critère finalisation__: 
-__Note (A-E)__: 
+__Note (A-E)__: A
 
 ### BONUS (1pt)
 - [x] Activation de Github Pages & Création d'une page erreur 404 (fichier .htaccess, design et intégration du 404.html)
@@ -81,5 +81,5 @@ __OU__
 - [ ] Valeur ajoutée dans la réalisation du Quiz (animations, défi d'intégration, ...)
 DÉCRIRE LA VALEUR AJOUTÉE en commentaire
 
-__BONUS (A-E)__: 
-__Commentaire__:
+__BONUS (A-E)__:  A
+__Commentaire__: J'ai fait mon github page, mais il y a un problème chez github, donc il n'avait pas été publié à 18h38.
