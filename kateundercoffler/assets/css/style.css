@@ -304,8 +304,6 @@ form {
 }
 
 
-
-
 /* CHANGEMENTS DU FORMULAIRE */
 fieldset {
     overflow: hidden;
@@ -364,11 +362,13 @@ ul {
 
 /* BORDER RÉPONSES */
 label {
+    display: flex;
+    flex-wrap: nowrap;
     border: 1px solid #3E3E3E;
     background-color: #FCF1EC;
     box-shadow: 7px 8px 8px -8px #666666;
     border-radius: 10px;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
     width: 100%;
     padding: 15px;
     cursor: pointer;
